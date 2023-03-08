@@ -4,7 +4,7 @@
 int printArray(int* array, int size);
 
 int main(void) {
-	int array[8] = {3, 5, 4, 2, 1, 6, 3, 10};
+	int array[] = {3, 5, 4, 2, 1, 6, 3, 10};
 	int size = 8;
 	int tmp;
 	int swap;
