@@ -39,11 +39,17 @@ int main(void) {
 
 
 int printArray(int* array, int size) {
-	printf("\n");
+	int rtn = -1;
 
-	for(int i = 0; i < size; i++) {
-		printf("%d ", array[i]);
+	if(array != NULL && size > 0) {
+		printf("\n");
+
+		for(int i = 0; i < size; i++) {
+			printf("%d ", array[i]);
+		}
+
+		rtn = 0;
 	}
 
-	return 0;
+	return rtn;
 }
